@@ -3,7 +3,7 @@ require 'json'
 
 coins = ["bitcoin"]
 request_url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?slug=#{coins.join(",")}"
-api_key = '80951962-2e65-43e6-a9bc-ff3b9cc11196'
+api_key = ''
 
 headers = { 
     "Accepts"  => "application/json",
