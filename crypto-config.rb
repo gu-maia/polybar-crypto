@@ -8,4 +8,3 @@
    "Accepts"  => "application/json",
    "X-CMC_PRO_API_KEY" => @api_key
 }
-
