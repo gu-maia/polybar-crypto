@@ -1,15 +1,11 @@
 require 'httparty'
+require_relative 'crypto-config'
 require 'json'
 
-coins = ["bitcoin"]
-request_url = "https://pro-api.coinmarketcap.com/v1/cryptocurrency/quotes/latest?slug=#{coins.join(",")}"
-api_key = ''
+response = HTTParty.get(@request_url, :headers => @headers).parsed_response
 
-headers = { 
-    "Accepts"  => "application/json",
-    "X-CMC_PRO_API_KEY" => api_key
-  }
-
-response = HTTParty.get(request_url, :headers => headers).parsed_response
-
-print response["data"]["1"]["quote"]["USD"]["price"].round(2)
+counter = 0
+response["data"].each do |current_coin| 
+  puts "#{@coins[counter][0][:icon]} #{current_coin[1]["quote"]["USD"]["price"].round(2)}"
+counter += 1
+end
