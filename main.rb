@@ -1,5 +1,4 @@
 require 'httparty'
-require 'json'
 require_relative 'crypto-config'
 
 response = HTTParty.get(@request_url, :headers => @headers)
