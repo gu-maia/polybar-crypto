@@ -4,8 +4,8 @@ This should be roughly what was done [here](https://github.com/willHol/polybar-c
 
 first, in your polybar folder
 ```bash
-  $ git clone https://github.com/itsmaia/polybar-crypto && cd polybar-cripto
-  $ mkdir ~/.config/polybar/crypto && cp ./{crypto-config.rb,main.rb} ~/.config/polybar/crypt
+  $ git clone https://github.com/itsmaia/polybar-crypto && cd polybar-crypto
+  $ mkdir ~/.config/polybar/crypto && cp ./{crypto-config.rb,main.rb} ~/.config/polybar/crypto
 ```
 Then, put your API key and desired coins at ```crypto-config.rb```
 
