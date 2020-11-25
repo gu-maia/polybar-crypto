@@ -7,7 +7,7 @@ first, in your polybar folder
   $ git clone https://github.com/itsmaia/polybar-crypto && cd polybar-crypto
   $ mkdir ~/.config/polybar/crypto && cp ./{crypto-config.rb,main.rb} ~/.config/polybar/crypto
 ```
-Then, put your API key and desired coins at ```crypto-config.rb```
+Then, put your API key (CoinMarketCap) and desired coins at ```crypto-config.rb```.
 
 ```ruby
 @coins = { :bitcoin => "bitcoin_icon", :dash => "dash_icon" }
